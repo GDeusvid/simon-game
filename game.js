@@ -10,6 +10,7 @@ $(document).keypress( function(){
         nextSequence();
     }    
     firstClick++
+    $(".endgame").addClass("hidden");
 });
 
 function nextSequence(){
@@ -93,6 +94,7 @@ function checkAnswer(currentLevel){
             }, 200);
             var somGreen = new Audio("sounds/wrong.mp3");
             somGreen.play();
+            $(".endgame").removeClass("hidden");
             
         }
 
@@ -110,7 +112,7 @@ function checkAnswer(currentLevel){
         }
     
 }
-
+ 
 
 // Seção extra:
 
@@ -125,4 +127,14 @@ $(".btns").click(function(){
         }, 500);
     }    
     firstClick++
-})
+});
+
+
+$(".btne").click(function(){
+    if (firstClick<1){
+        nextSequence();
+    }    
+    firstClick++
+    $(".endgame").addClass("hidden");
+
+});
