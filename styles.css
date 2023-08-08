@@ -2,11 +2,28 @@ body {
   text-align: center;
   background-color: #011F3F;
 }
+#page-container {
+  position: relative;
+  min-height: 95vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* altura do rodapé */
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;            /* altura do rodapé */
+}
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
   color: #FEF2BF;
   line-height: 1.5;
 }
@@ -26,7 +43,7 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
-
+ 
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -63,7 +80,6 @@ body {
 }
 
 footer {
-  margin-top: 10vh;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
